@@ -1,0 +1,206 @@
+---
+title: "Codebook"
+format: html
+editor: visual
+---
+
+# \*Full Variable Explanations (20 variables)\*\*
+
+This codebook provides clear definitions for all 20 variables in the phone-usage dataset, including what each variable measures, its data type, and the possible levels for categorical responses. It also documents how student majors were grouped into **Business or Economics**, **Env–Bio–Health**, and **Other**, ensuring consistency in analysis and interpretation. Together, these descriptions create a coherent reference that supports accurate modeling, communication, and reproducibility.
+
+------------------------------------------------------------------------
+
+## **1. `timestamp`**
+
+**Type:** Datetime (`POSIXct`) **Description:** The date and time when the student submitted the survey. **Levels:** N/A
+
+------------------------------------------------------------------------
+
+## **2. `are_you_in_dr_williamss_fall_2025_stat_324_course`**
+
+**Type:** Categorical (character) **Description:** Indicates whether the student is enrolled in STAT 324 for Fall 2025. **Levels:**
+
+-   `"Yes"`
+-   `"No"`
+
+------------------------------------------------------------------------
+
+## **3. `age_years`**
+
+**Type:** Numeric (`double`) **Description:** Student age in years. **Levels:** N/A
+
+------------------------------------------------------------------------
+
+## **4. `what_is_your_major`**
+
+**Type:** Categorical (character) **Description:** Student’s academic major, **recoded into three categories**. **Final Levels:**
+
+### **A. Business or Economics**
+
+-   Business Administration
+-   Economics
+
+### **B. Env–Bio–Health**
+
+-   Environmental Management & Protection
+-   Marine Science
+-   Biological Sciences
+-   Public Health
+-   Child Development (optional but logically placed here)
+
+### **C. Other**
+
+-   City & Regional Planning
+-   Computer Science
+-   Mathematics
+-   Mechanical Engineering
+-   MSCI (Industrial Tech / Manufacturing Science / Industrial Engineering–style)
+-   Statistics
+-   Any remaining major not in A or B
+
+------------------------------------------------------------------------
+
+## **5. `class_standing`**
+
+**Type:** Categorical **Description:** Student’s current class level. **Typical Levels:**
+
+-   `"Freshman"`
+-   `"Sophomore"`
+-   `"Junior"`
+-   `"Senior"`
+-   `"Graduate"`
+
+(Actual levels depend on your dataset but follow this pattern.)
+
+------------------------------------------------------------------------
+
+## **6. `phone_operating_system`**
+
+**Type:** Categorical **Description:** The OS of the student’s phone. **Levels:**
+
+-   `"iOS (iPhone)"`
+-   `"Android"`
+-   (possible: `"Other"` if someone entered it manually)
+
+------------------------------------------------------------------------
+
+## **7. `phone_brand`**
+
+**Type:** Categorical **Description:** The brand of the student’s phone. **Examples of levels:**
+
+-   `"Apple"`
+-   `"Samsung"`
+-   `"Google"`
+-   `"Motorola"`
+-   `"Other"` (Exact levels depend on your dataset.)
+
+------------------------------------------------------------------------
+
+## **8. `can_you_access_a_weekly_phone_usage_report_on_your_device`**
+
+**Type:** Categorical **Description:** Whether the student can access a weekly screen-time report on their phone. **Levels:**
+
+-   `"Yes"`
+-   `"No"`
+
+------------------------------------------------------------------------
+
+## **9. `avg_screen_time_min`**
+
+**Type:** Numeric **Description:** Average daily screen time over the last 7 days (in minutes). **Levels:** N/A
+
+------------------------------------------------------------------------
+
+## **10. `total_screen_time_7d_min`**
+
+**Type:** Numeric **Description:** Total screen time in minutes over the last 7 days. **Levels:** N/A
+
+------------------------------------------------------------------------
+
+## **11. `avg_unlocks_day`**
+
+**Type:** Numeric **Description:** Average number of daily unlocks/pickups over the last 7 days. **Levels:** N/A
+
+------------------------------------------------------------------------
+
+## **12. `avg_notifications_day`**
+
+**Type:** Numeric **Description:** Average number of notifications received per day over the last 7 days. **Levels:** N/A
+
+------------------------------------------------------------------------
+
+## **13. `do_you_go_on_instagram_this_includes_finstas`**
+
+**Type:** Categorical **Description:** Whether the student uses Instagram (including fake or secondary accounts). **Levels:**
+
+-   `"Yes"`
+-   `"No"`
+
+------------------------------------------------------------------------
+
+## **14. `ig_minutes_7d`**
+
+**Type:** Numeric **Description:** Total Instagram minutes used over the last 7 days. **Levels:** N/A
+
+*(0 means they do not use Instagram.)*
+
+------------------------------------------------------------------------
+
+## **15. `do_you_go_on_tik_tok_fake_accounts_count_here_as_well`**
+
+**Type:** Categorical **Description:** Whether the student uses TikTok (including fake or secondary accounts). **Levels:**
+
+-   `"Yes"`
+-   `"No"`
+
+------------------------------------------------------------------------
+
+## **16. `tiktok_minutes_7d`**
+
+**Type:** Numeric **Description:** Total TikTok minutes used over the last 7 days. **Levels:** N/A
+
+*(0 means they do not use TikTok.)*
+
+------------------------------------------------------------------------
+
+## **17. `other_social_count`**
+
+**Type:** Numeric **Description:** Number of **other** social media platforms (besides IG & TikTok) used at least once per week. Examples include: Facebook, Snapchat, LinkedIn, Reddit, X/Twitter, BeReal…
+
+Levels: numeric counts (0, 1, 2, …)
+
+------------------------------------------------------------------------
+
+## **18. `i_feel_like_i_use_my_phone_more_than_i_should`**
+
+**Type:** Categorical **Description:** Likert-scale response about perceived overuse. **Typical Levels:**
+
+-   `"Strongly Disagree"`
+-   `"Disagree"`
+-   `"Neutral"`
+-   `"Agree"`
+-   `"Strongly Agree"`
+
+------------------------------------------------------------------------
+
+## **19. `social_media_increases_my_stress`**
+
+**Type:** Categorical **Description:** Likert-scale response about stress caused by social media. **Typical Levels:**
+
+-   `"Strongly Disagree"`
+-   `"Disagree"`
+-   `"Neutral"`
+-   `"Agree"`
+-   `"Strongly Agree"`
+
+------------------------------------------------------------------------
+
+## **20. `social_media_helps_me_feel_more_connected_to_other_people`**
+
+**Type:** Categorical **Description:** Likert-scale response about social connection. **Typical Levels:**
+
+-   `"Strongly Disagree"`
+-   `"Disagree"`
+-   `"Neutral"`
+-   `"Agree"`
+-   `"Strongly Agree"`
